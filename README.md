@@ -6,7 +6,7 @@
 
 <div align="center">
 
-# nonebot-plugin-gitcard
+# nonebot-plugin-githubcard
 
 _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Nonebot2 V11）✨_
 
@@ -27,7 +27,7 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Nonebot2 V11
 <summary>使用PIP安装</summary>
 
 
-    pip install nonebot-plugin-gitcard
+    pip install nonebot-plugin-githubcard
 </details>
 
 ## 🎉 使用
@@ -40,4 +40,3 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Nonebot2 V11
 <div align="left">
   <img src="https://s1.vika.cn/space/2023/05/21/f6b1a891001346fe90ac398eb2f2f26a?attname=test.png"/>
 </div>
-
