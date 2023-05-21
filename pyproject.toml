@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nonebot-plugin-gitcard"
+version = "0.1.0"
+description = "检测GitHub仓库链接并自动发送卡片信息（适用于Nonebot2 V11）"
+authors = ["ElainaFanBoy <demo0929@vip.qq.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ElainaFanBoy/nonebot_plugin_gitcard"
+repository = "https://github.com/ElainaFanBoy/nonebot_plugin_gitcard"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nonebot2 = "^2.0.0rc1"
+nonebot-adapter-onebot = "^2.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
