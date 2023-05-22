@@ -8,7 +8,7 @@
 
 # nonebot-plugin-githubcard
 
-_✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Nonebot2 V11）✨_
+_✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11）✨_
 
 <a href="./LICENSE">
     <img src="https://camo.githubusercontent.com/6849e28a50157229c6a1426570610ecbe589c68bd7c806f4f7513d7265db8cf2/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6e6f6e65706c7567696e2f6e6f6e65626f742d706c7567696e2d706574706574" alt="license">
