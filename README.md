@@ -36,15 +36,7 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
 
 | 配置项 | 必填 | 默认值 | 说明 |
 |:-----:|:----:|:----:|:----:|
-| github_token | 是 | 无 | ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-
-如：
-
-```
-github_token = ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
-
-
+| github_token | 否 | 无 | github_token = ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
 
 ## 🎉 使用
 ### 指令表
