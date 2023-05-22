@@ -30,11 +30,27 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
     pip install nonebot-plugin-githubcard
 </details>
 
+## ⚙️ 配置
+
+在 nonebot2 项目的`.env`文件中添加下表中的必填配置
+
+| 配置项 | 必填 | 默认值 | 说明 |
+|:-----:|:----:|:----:|:----:|
+| github_token | 是 | 无 | ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
+
+如：
+
+```
+github_token = ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+
+
 ## 🎉 使用
 ### 指令表
-| 指令 | 权限 | 需要@ | 范围 |
+| 指令 | 权限 | 需要@ | 说明 |
 |:-----:|:----:|:----:|:----:|
-| GitHub仓库链接 | 所有人 | 否 | 群聊 |
+| (https://)github.com/xxx/xxx | 所有人 | 否 | GitHub仓库链接 |
 ### 效果图
 
 <div align="left">
