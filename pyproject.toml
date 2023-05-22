@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "nonebot-plugin-githubcard"
-version = "0.1.0"
-description = "检测GitHub仓库链接并自动发送卡片信息（适用于Nonebot2 V11）"
+version = "0.1.1"
+description = "检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11）"
 authors = ["ElainaFanBoy <demo0929@vip.qq.com>"]
 license = "MIT"
 readme = "README.md"
