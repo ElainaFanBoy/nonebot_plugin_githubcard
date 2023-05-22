@@ -13,7 +13,7 @@ async def get_github_reposity_information(url: str) -> str:
     except:
         UserName, RepoName = url.replace("github.com/", "").split("/")
     async with aiohttp.ClientSession() as session:
-        async with session.get(f"https://api.github.com/users/{UserName}", headers=Headers, timeout=5) as response:
+        async with session.get(f"https://api.github.com/users/{UserName}?access_token={token}", headers=Headers, timeout=5) as response:
             RawData = await response.json()  
             AvatarUrl = RawData["avatar_url"]
             ImageUrl = f"https://image.thum.io/get/width/1280/crop/640/viewportWidth/1280/png/noanimate/https://socialify.git.ci/{UserName}/{RepoName}/image?description=1&font=Rokkitt&language=1&name=1&owner=1&pattern=Circuit%20Board&theme=Light&logo={AvatarUrl}"
