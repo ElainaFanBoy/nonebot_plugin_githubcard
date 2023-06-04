@@ -1,12 +1,3 @@
-'''
-Author: Night-stars-1 nujj1042633805@gmail.com
-Date: 2023-06-04 16:33:00
-LastEditors: Night-stars-1 nujj1042633805@gmail.com
-LastEditTime: 2023-06-04 16:39:24
-Description: 
-
-Copyright (c) 2023 by Night-stars-1, All Rights Reserved. 
-'''
 from nonebot.rule import T_State
 from nonebot import get_driver
 from nonebot.log import logger
