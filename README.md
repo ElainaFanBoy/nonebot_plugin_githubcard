@@ -42,7 +42,7 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
 ### 指令表
 | 指令 | 权限 | 需要@ | 说明 |
 |:-----:|:----:|:----:|:----:|
-| (https://)github.com/xxx/xxx | 所有人 | 否 | GitHub仓库链接 |
+| https://github.com/xxx/xxx | 所有人 | 否 | GitHub仓库链接 |
 ### 效果图
 
 <div align="left">
