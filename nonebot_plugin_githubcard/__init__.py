@@ -23,7 +23,6 @@ def match_link_parts(link):
 @github.handle()
 async def github_handle(bot: Bot, event: GroupMessageEvent, state: T_State):
     url = match_link_parts(event.get_plaintext())
-    logger.info(url)
     imageUrl = await get_github_reposity_information(url)
     assert(imageUrl != "获取信息失败")
     await github.send(MessageSegment.image(imageUrl))
