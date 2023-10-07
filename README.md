@@ -12,7 +12,7 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
 
 <a href="./LICENSE">
     <img src="https://camo.githubusercontent.com/6849e28a50157229c6a1426570610ecbe589c68bd7c806f4f7513d7265db8cf2/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6e6f6e65706c7567696e2f6e6f6e65626f742d706c7567696e2d706574706574" alt="license">
-</a><img src="https://img.shields.io/badge/nonebot-2.0.0rc1+-red.svg" alt="NoneBot">
+</a><img src="https://img.shields.io/badge/nonebot-2.0.0+-red.svg" alt="NoneBot">
 <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
 
 </div>
