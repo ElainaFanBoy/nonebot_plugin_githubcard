@@ -8,6 +8,21 @@ from nonebot.plugin import on_regex
 
 import re
 
+__plugin_meta__ = PluginMetadata(
+    name="githubcard",
+    description="检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11）",
+    usage=usage,
+    type='application',
+    homepage='https://github.com/ElainaFanBoy/nonebot_plugin_githubcard',
+    config=Config,
+    supported_adapters={"~onebot.v11"},
+    extra={
+        "unique_name": "githubcard",
+        "author": "Nanako <demo0929@vip.qq.com>",
+        "version": "0.1.6",
+    },
+)
+
 global_config = get_driver().config
 config = Config(**global_config.dict())
 github = on_regex(r"https?://github\.com/([^/]+/[^/]+)", priority=10, block=False)
