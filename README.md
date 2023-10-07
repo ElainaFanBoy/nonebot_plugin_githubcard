@@ -30,6 +30,13 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
     pip install nonebot-plugin-githubcard
 </details>
 
+<details>
+<summary>克隆至本地安装</summary>
+
+
+    git clone https://github.com/ElainaFanBoy/nonebot_plugin_githubcard.git
+</details>
+
 ## ⚙️ 配置
 
 在 nonebot2 项目的`.env`文件中添加下表中的必填配置
