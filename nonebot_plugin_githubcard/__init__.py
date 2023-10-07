@@ -4,7 +4,7 @@ from nonebot.log import logger
 from nonebot.adapters.onebot.v11 import Bot, GroupMessageEvent, MessageSegment
 from .config import Config
 from .data_source import get_github_reposity_information
-from nonebot.plugin import on_regex
+from nonebot.plugin import on_regex, PluginMetadata
 
 import re
 
