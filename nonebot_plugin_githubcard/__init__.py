@@ -11,15 +11,14 @@ import re
 __plugin_meta__ = PluginMetadata(
     name="githubcard",
     description="检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11）",
-    usage=usage,
+    usage='通过正则表达式检测Github链接',
     type='application',
     homepage='https://github.com/ElainaFanBoy/nonebot_plugin_githubcard',
-    config=Config,
     supported_adapters={"~onebot.v11"},
     extra={
         "unique_name": "githubcard",
         "author": "Nanako <demo0929@vip.qq.com>",
-        "version": "0.1.6",
+        "version": "0.1.7",
     },
 )
 
