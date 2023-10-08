@@ -18,7 +18,7 @@ __plugin_meta__ = PluginMetadata(
     extra={
         "unique_name": "githubcard",
         "author": "Nanako <demo0929@vip.qq.com>",
-        "version": "0.1.7",
+        "version": "0.1.8",
     },
 )
 
