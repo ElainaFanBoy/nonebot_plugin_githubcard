@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot-plugin-githubcard"
-version = "0.1.8"
+version = "0.1.9"
 description = "检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11）"
 authors = ["Nanako <demo0929@vip.qq.com>"]
 license = "MIT"
