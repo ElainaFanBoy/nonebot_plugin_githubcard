@@ -55,4 +55,5 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
 
 <div align="left">
   <img src="https://s1.vika.cn/space/2023/05/21/f6b1a891001346fe90ac398eb2f2f26a?attname=test.png"/>
+  <img src="https://opengraph.githubassets.com/githubcard/nonebot/nonebot2"/>
 </div>
