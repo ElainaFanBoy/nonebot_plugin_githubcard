@@ -54,6 +54,6 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
 ### 效果图
 
 <div align="left">
-  <img src="https://s1.vika.cn/space/2023/05/21/f6b1a891001346fe90ac398eb2f2f26a?attname=test.png"/>
+  <img src="https://socialify.git.ci/nonebot/nonebot2/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F63496654%3Fs%3D200%26v%3D4&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light"/>
   <img src="https://opengraph.githubassets.com/githubcard/nonebot/nonebot2"/>
 </div>
