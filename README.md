@@ -44,7 +44,7 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
 | 配置项 | 必填 | 默认值 | 说明 |
 |:-----:|:----:|:----:|:----:|
 | github_token | 否 | 无 | github_token = ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx |
-| github_type | 否 | 0 | github图片样式(0为默认样式，1为opengraph样式) |
+| github_type | 否 | 0 | github图片样式(0为socialify样式，1为opengraph样式) |
 
 ## 🎉 使用
 ### 指令表
@@ -54,6 +54,12 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
 ### 效果图
 
 <div align="left">
-  <img src="https://socialify.git.ci/nonebot/nonebot2/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F63496654%3Fs%3D200%26v%3D4&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light"/>
-  <img src="https://opengraph.githubassets.com/githubcard/nonebot/nonebot2"/>
+  
+  socialify样式：
+  
+  <img src="https://socialify.git.ci/nonebot/nonebot2/image?description=1&font=Rokkitt&forks=1&issues=1&language=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F63496654%3Fs%3D200%26v%3D4&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light" width="600"/>
+  
+  opengraph样式：
+  
+  <img src="https://opengraph.githubassets.com/githubcard/nonebot/nonebot2" width="600"/>
 </div>
