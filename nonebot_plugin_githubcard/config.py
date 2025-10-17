@@ -11,7 +11,7 @@ from .models import GitHubCardConfig
 class Config(BaseModel, extra=Extra.ignore):
     """插件配置"""
     github_token: Optional[str] = None
-    github_type: Literal[0, 1] = 0
+    github_type: Literal[0, 1] = 1
 
 
 def get_config() -> GitHubCardConfig:
