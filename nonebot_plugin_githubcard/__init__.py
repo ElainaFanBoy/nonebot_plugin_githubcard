@@ -1,13 +1,13 @@
-from typing import Union
-from nonebot import get_driver
+import aiohttp
+
 from nonebot.log import logger
-from nonebot.adapters.onebot.v11 import Bot, GroupMessageEvent, PrivateMessageEvent, MessageSegment
+from nonebot.adapters import Event
 from nonebot.plugin import PluginMetadata, on_message
 from nonebot.matcher import Matcher
 from nonebot import require
 
 require("nonebot_plugin_alconna")
-from nonebot_plugin_alconna import on_alconna, AlconnaMatcher, Args, Match
+from nonebot_plugin_alconna import on_alconna, AlconnaMatcher, Args, Match, UniMessage
 from arclet.alconna import Alconna, CommandMeta
 
 from .config import get_config
@@ -20,7 +20,6 @@ __plugin_meta__ = PluginMetadata(
     usage="自动识别消息中的GitHub链接并发送对应的卡片图片，支持：仓库、Issue、Pull Request、Release",
     type="application",
     homepage="https://github.com/ElainaFanBoy/nonebot_plugin_githubcard",
-    supported_adapters={"~onebot.v11"},
     extra={
         "unique_name": "githubcard",
         "author": "Nanako <demo0929@vip.qq.com>",
@@ -56,7 +55,7 @@ async def extract_github_urls(message: str) -> list[str]:
     return re.findall(pattern, message)
 
 
-async def process_github_url(url: str, matcher: Matcher) -> bool:
+async def process_github_url(url: str) -> bool:
     """处理单个GitHub URL"""
     try:
         github_link = parse_github_url(url)
@@ -67,7 +66,13 @@ async def process_github_url(url: str, matcher: Matcher) -> bool:
         image_url = await service.generate_card_url(github_link)
 
         if image_url:
-            await matcher.send(MessageSegment.image(image_url))
+            async with aiohttp.ClientSession(
+                timeout=aiohttp.ClientTimeout(total=15)
+            ) as session:
+                async with session.get(image_url) as response:
+                    response.raise_for_status()
+                    image_data = await response.read()
+            await UniMessage.image(raw=image_data).send()
             logger.info(f"发送GitHub卡片: {github_link.link_type.value} - {url}")
             return True
         else:
@@ -81,8 +86,7 @@ async def process_github_url(url: str, matcher: Matcher) -> bool:
 
 @github_auto.handle()
 async def handle_github_auto(
-    bot: Bot,
-    event: Union[GroupMessageEvent, PrivateMessageEvent],
+    event: Event,
     matcher: Matcher
 ) -> None:
     """自动处理消息中的GitHub链接"""
@@ -95,7 +99,7 @@ async def handle_github_auto(
     # 处理所有找到的GitHub链接
     success_count = 0
     for url in github_urls:
-        if await process_github_url(url, matcher):
+        if await process_github_url(url):
             success_count += 1
 
     # 如果没有成功处理任何链接，发送错误提示
@@ -105,15 +109,14 @@ async def handle_github_auto(
 
 @github_cmd.handle()
 async def handle_github_cmd(
-    bot: Bot,
-    event: Union[GroupMessageEvent, PrivateMessageEvent],
+    event: Event,
     matcher: AlconnaMatcher,
     url: Match[str]
 ) -> None:
     """处理GitHub命令"""
     if url.available:
         github_url = url.result
-        if not await process_github_url(github_url, matcher):
+        if not await process_github_url(github_url):
             await matcher.send("获取GitHub信息失败")
     else:
         await matcher.send("请提供有效的GitHub链接")
