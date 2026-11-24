@@ -8,7 +8,7 @@
 
 # nonebot-plugin-githubcard
 
-_✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11）✨_
+_✨ 检测GitHub仓库链接并自动发送卡片信息（支持 NoneBot2 多种适配器）✨_
 
 <img src="https://img.shields.io/github/license/ElainaFanBoy/nonebot_plugin_githubcard.svg" alt="license">
 <img src="https://img.shields.io/badge/nonebot-2.0.0+-red.svg" alt="NoneBot">
@@ -18,7 +18,7 @@ _✨ 检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11�
 
 ## 📖 介绍
 
-检测GitHub仓库链接并自动发送卡片信息
+检测GitHub仓库链接并自动发送卡片信息。通过 `nonebot-plugin-alconna` 的通用消息组件发送图片，支持其已适配的多种 NoneBot2 适配器（具体取决于目标平台的图片消息支持情况）。
 
 ## 💿 安装
 
